@@ -26,8 +26,10 @@ class PatientForm(forms.ModelForm):
     class Meta:
         model = models.Patient
         fields = ['PatientName','PatientSecondName','PatientThirdName','Gender','PatientMobile1','PatientMobile2',
-           'Birtdate','Jop','JopArea','ComeFrom','PatientFfriend','doctor']
+           'Birtdate','Jop','JopArea']
         
+        # fields = ['PatientName','PatientSecondName','PatientThirdName','Gender','PatientMobile1','PatientMobile2',
+        #    'Birtdate','Jop','JopArea','ComeFrom','PatientFfriend','doctor']
         
             
         labels = {

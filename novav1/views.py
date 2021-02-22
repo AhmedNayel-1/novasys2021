@@ -58,8 +58,7 @@ def PatientCreateView(request):
             #    if doc is not None:  
             #        form.doctor          =  models.DoctorOut.objects.get(pk=request.POST.get('doctor', 'False'))
             form.save()
-            print(pf)
-            print(doc)
+           
             return redirect("/")
            #return redirect('items-list2', pid=pid)
     else:
